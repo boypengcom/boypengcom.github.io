@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 'Hello'
-date: 2017-04-18
+date: 2019-12-31
 author: June-1
 color: rgb(255,210,32)
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
+cover: '../assets/test.jpg'
 tags: June-1
 ---
 
