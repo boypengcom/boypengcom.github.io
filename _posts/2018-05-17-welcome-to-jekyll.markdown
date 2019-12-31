@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Welcome to June-1!"
-date:   2018-05-17 14:05:21 +0800
-tags: jekyll update
+date:   2019-12-31 10:21:21 +0800
+tags: june-1 update
 color: rgb(255,90,90)
-cover: '../assets/test.png'
+cover: '../assets/test.jpg'
 subtitle: 'Welcome to june-1!'
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
