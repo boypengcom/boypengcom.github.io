@@ -20,7 +20,7 @@ webtitle: 'Security research'
 bio: 'O.O'
 about: true
 aboutyou: '工作在一家安全厂商'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+portraits: '/assets/profile.jpg' # your portraits image file path
 
 # SNS
 SNS: true
