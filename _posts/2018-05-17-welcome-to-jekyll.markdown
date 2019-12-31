@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to June-1!"
-date:   2019-12-31 10:21:21 +0800
+title:  "Welcome"
+date:   2019-12-31
 tags: june-1 update
 color: rgb(255,90,90)
 cover: '../assets/test.jpg'

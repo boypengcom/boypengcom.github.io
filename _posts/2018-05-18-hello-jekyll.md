@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Hello Jekyll'
+title: 'Hello'
 date: 2017-04-18
 author: Jekyll
 color: rgb(255,210,32)
