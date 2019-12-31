@@ -2,10 +2,10 @@
 layout: post
 title: 'Hello'
 date: 2017-04-18
-author: Jekyll
+author: June-1
 color: rgb(255,210,32)
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
-tags: jekyll
+tags: June-1
 ---
 
 > Transform your plain text into static websites and blogs.
