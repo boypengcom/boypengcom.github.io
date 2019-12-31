@@ -108,7 +108,7 @@ webtitle: 'your awesome webtitle'
 bio: 'your awesome bio'
 about: true
 aboutyou: 'your introduction'
-portraits: '/assets/profile.jpg' # your portraits image file path
+portraits: '/assets/profile.jpeg' # your portraits image file path
 ```
 
 ​	该部分显示在 `关于博主` 页面，与 `社交媒体` 一同在下图显示。
