@@ -26,19 +26,8 @@ portraits: '/assets/profile.jpg' # your portraits image file path
 SNS: true
 SNS-icon: #['github']
   mail: 'boypeng101@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/boypengcom'
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
+ 
 
 # 分页
 paginate: 2
