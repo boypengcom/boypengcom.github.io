@@ -132,7 +132,7 @@ portraits: '/assets/profile.jpg' # your portraits image file path
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   mail: 'mailto:boypeng101@gmail.com'
-  github: ''
+  github: 'https://github.com/boypengcom'
 
 ```
 
@@ -233,7 +233,7 @@ pygmentsTheme: 'default'
 ```yaml
 # 友情链接
 friends:
-  jekyll: 'https://www.jekyll.com.cn/'
+  jekyll: 'https://github.com/12306Bro'
 ```
 
 ​	按格式填写即可，排序与配置文件里的排序有关。
