@@ -8,7 +8,7 @@ cover: '../assets/test.jpg'
 tags: June-1
 ---
 
-> Transform your plain text into static websites and blogs.
+> 这是测试.
 
 # Welcome
 
