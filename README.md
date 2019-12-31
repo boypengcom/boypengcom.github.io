@@ -4,17 +4,7 @@
 
 ### Preview
 
-[在线预览 view demo →](http://xseven.me/)
 
-![1](/screenshot/1.png)
-
-![2](/screenshot/2.png)
-
-![3](/screenshot/3.png)
-
-想要查看手机端显示效果，扫描下方二维码浏览器打开即可
-
-![4](/screenshot/4.png)
 
 
 
@@ -30,29 +20,6 @@
 - 支持 `百度统计` 、`谷歌分析` 两种网站追踪系统
 - 支持13款不同社交平台图标及链接地址指向
 - 支持11个不同平台的文章分享路口
-
-
-
-### 开始使用
-
-#### 线上部署
-
-​	首先在 `github` 上开启一个仓库起名为 `你的github用户名.github.io` 。并 `clone` 你的仓库到本地。 然后下载 `HardCandy-Jekyll` 的 [源码](https://github.com/xukimseven/HardCandy-Jekyll) 到本地之后，将 `_config.yml` 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 `github` 线上仓库，即可通过域名 `https://你的github用户名.github.io` 访问看到自己的博客页面。
-
-#### 本地部署
-
-​	首先在本地安装 `Jekyll` [详情请戳](https://www.jekyll.com.cn/docs/quickstart/)
-
-​	安装完成之后，使用命令 `jekyll -v` 查看 **jekyll版本号** ，若低于 `jekyll 3.x.x` 则需要升级至 `jekyll 3.x.x` 。 
-
-​	使用 `gem install jekyll-paginate` 或 `sudo gem install jekyll-paginate` 安装Jekyll的分页插件。
-
-​	将源码 `clone` 到本地后，在终端进入 `HardCandy-Jekyll` 根目录，运行 `jekyll server` 或 `bundle exec jekyll serve` ，即可开启jekyll的服务。通过浏览器访问 [http://localhost:4000](http://localhost:4000) ，即可看到本地部署的 `HardCandy-Jekyll` 博客了。
-
-> warning！值得注意的地方：
->
-> ​	由于本主题是基于 `jekyll 3.8.1` 开发 ，jekyll的版本差异也许会导致相关显示效果的差异。详情请参考官方文档：[news](https://jekyllrb.com/news/)
-
 
 
 ### 配置文档
@@ -87,20 +54,13 @@
 ```yaml
 ---
 # Site settings 配置站点
-title: 'your awesome title'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
+title: '安全'
+description: '博客站会时不时放出一些菜鸡博主自己的网络安全博客~。~'
+keywords: 'Security，analysis'
 url: 'https://abc.github.io' # your host
 ---
 ```
 
-`title` ：用于页面的 title 标签的显示内容
-
-`description` ：网站的简介
-
-`keywords` ：网站的关键词
-
-`url` ：网站域名
 
 
 
@@ -148,7 +108,7 @@ webtitle: 'your awesome webtitle'
 bio: 'your awesome bio'
 about: true
 aboutyou: 'your introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+portraits: '/assets/profile.jpg' # your portraits image file path
 ```
 
 ​	该部分显示在 `关于博主` 页面，与 `社交媒体` 一同在下图显示。
@@ -171,20 +131,9 @@ portraits: '/assets/profile.jpeg' # your portraits image file path
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  mail: 'mailto:boypeng101@gmail.com'
   github: ''
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
+
 ```
 
 ​	~~主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 `#` 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。~~

@@ -25,7 +25,7 @@ portraits: '/assets/profile.jpg' # your portraits image file path
 # SNS
 SNS: true
 SNS-icon: #['github']
-  mail: 'boypeng101@gmail.com'
+  mail: 'mailto:boypeng101@gmail.com'
   github: 'https://github.com/boypengcom'
  
 
