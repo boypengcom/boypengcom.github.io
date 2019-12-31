@@ -5,6 +5,7 @@ date: 2019-12-31
 author: June-1
 color: rgb(255,210,32)
 cover: '../assets/test.jpg'
+subtitle: 'Welcome to june-1!'
 tags: June-1
 ---
 
