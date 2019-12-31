@@ -8,8 +8,17 @@ cover: '../assets/test.jpg'
 subtitle: '卷影副本转储NTDS.DIT文件'
 ---
 
-# Welcome
-
-## Welcome
-
+# 什么是NTDS文件？
+Ntds.dit文件是一个数据库文件，存在于C:\Windows\System32\ntds.dit用于存储Active Directory的数据，其中包括用户对象，组和组成员的身份信息。最重要的是它包括域中所有用户的密码哈希。也就是说，我们通过提取NTDS文件中的散列HASH，可以使用Mimikatz之类的工具执行哈希传递攻击，或使用Hashcat之类的工具来破解这些密码。这些密码的提取和破解可以脱机执行，因此将无法检测到。一旦攻击者提取了这些HASH，它们便可以充当域上包括域管理员的任何用户。
+# 场景描述
+攻击者获取到域管理员权限后，可以尝试复制本地的NTDS.dit文件。之后读取文件中存储的用户凭证。
+由于很多情况下DC的权限管理比较严格，这里使用vssadmin来通过卷影副本来将ntds文件转储，同时方便后续的读取hash的过程。
+简单介绍一下vssadmin:
+是Windows本地的白名单工具，存在于C:\Windows\System32\vssadmin.exe
+能够显示当前卷卷影副本备份以及所有已安装的卷影副本编写器和提供程序。
+## 创建C盘的卷影副本
+{% highlight ruby %}
+vssadmin create shadow /for=c:
+{% endhighlight %}
+![1](/assets/vssadmin.png)
 ### Welcome
