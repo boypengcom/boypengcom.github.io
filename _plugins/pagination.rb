@@ -33,7 +33,6 @@ module Jekyll
       # directories, e.g.: page2/index.html, page3/index.html, etc and adds more
       # site-wide data.
       #
-      # site - The Site.
       # page - The index.html Page that requires pagination.
       #
       # {"paginator" => { "page" => <Number>,
