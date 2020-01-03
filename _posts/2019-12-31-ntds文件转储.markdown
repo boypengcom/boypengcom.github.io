@@ -50,7 +50,7 @@ impacket-secretsdump -system /root/Desktop/SYSTEM -ntds /root/Desktop/ntds.dit L
 可以看到已经提取出当前DC中所有的账户hash值，之后可以使用这些hash值进行hash传递。
 ![5](/assets/vssadmin5.png)
 ### Windows主机安全日志检测
-由于很多生产环境不允许安装Sysmon，并且未在系统日志和应用程序日志中发现相关特征，所以只用安全日志来进行检测
-经过多次测试，域DC环境下执行卷影副本的创建时，会连续出现7个安全日志
+由于很多生产环境不允许安装Sysmon，并且未在系统日志和应用程序日志中发现相关特征，所以只用安全日志来进行检测.
+经过多次测试，域DC环境下执行卷影副本的创建时，会连续出现7个安全日志，如下图所示：
 ![6](/assets/vssadmin6.png)
 
