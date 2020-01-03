@@ -3,7 +3,7 @@ layout: post
 title:  "从NTDS.DIT文件中提取密码哈希"
 date:   2019-12-31
 tags: june-1
-color: rgb(255,90,80)
+color: rgb(230,90,80)
 cover: '../assets/test.jpg'
 subtitle: '卷影副本转储NTDS.DIT文件'
 ---
