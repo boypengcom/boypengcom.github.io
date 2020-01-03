@@ -53,4 +53,6 @@ impacket-secretsdump -system /root/Desktop/SYSTEM -ntds /root/Desktop/ntds.dit L
 由于很多生产环境不允许安装Sysmon，并且未在系统日志和应用程序日志中发现相关特征，所以只用安全日志来进行检测.
 经过多次测试，域DC环境下执行卷影副本的创建时，会连续出现7个安全日志，如下图所示：
 ![6](/assets/vssadmin6.png)
-
+注：在Windows2012R2版本及以上，可以开启Windows审核进程创建的安全策略，来记录命令行参数。
+根据日志编写的sigma规则如下：
+![7](/assets/vssadmin7.png)
