@@ -21,7 +21,7 @@ Ntds.dit文件是一个数据库文件，用于存储Active Directory的数据�
 {% highlight ruby %}
 vssadmin create shadow /for=c:
 {% endhighlight %}
-![1](/assets/vssadmin.png)
+![1](/assets/vssadmin1.png)
 ## 从卷影中检索并复制ntds.dit文件到指定目录下
 使用以下命令（登录权限为域管理员权限）：
 {% highlight ruby %}
