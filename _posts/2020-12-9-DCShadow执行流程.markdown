@@ -2,9 +2,9 @@
 layout: post
 title:  "使用mimikatz执行DCShadow攻击"
 date:   2020-12-09
-tags: june-1
+tags: ID不重要
 color: rgb(135,206,235)
-cover: '../assets/test.jpg'
+cover: '../assets/dcshadow.png'
 subtitle: 'DCShadow创建临时域控'
 ---
 
