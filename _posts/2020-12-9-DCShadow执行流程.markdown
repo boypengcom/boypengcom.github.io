@@ -67,7 +67,7 @@ mimikatz # lsadump::dcshadow /object:CN=dc,CN=Users,DC=tony,DC=local /attribute:
 ## 创建窗口B
 保持这个窗口，不要关闭！并在管理员权限下打开另一个cmd窗口，这个窗口的权限必须是域管理组成员的权限，也就是Domain admin组成员。
 ### 使用PSEXEC
-这里使用psexec来启用窗口
+这里使用psexec来启用system窗口
 ![10](/assets/DCShadow/10.png)
 ### 运行mimikatz
 在这个窗口下运行mimikatz,查看当前的权限，为域管理权限test
