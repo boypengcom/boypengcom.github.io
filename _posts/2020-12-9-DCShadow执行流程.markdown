@@ -117,7 +117,7 @@ mimikatz # lsadump::dcshadow /object:CN=dc,CN=Users,DC=tony,DC=local /attribute:
 2、	在域主机防火墙中添加策略，开放RPC服务的端口（具体就不再写了，可以自行百度）
 ![19](/assets/DCShadow/19.png)
 ![20](/assets/DCShadow/20.png)
-6.	总结
+# 总结
 DCShadow目前还是具有危害性的操作行为，该技术可以用于更改和删除复制以及其他关联的元数据，以阻止应急人员分析。攻击者还可以利用此技术执行SID历史记录注入和操纵AD对象（例如帐户，访问控制列表等）以建立持久性后门。
 这不属于漏洞，因为是使用合法的已记录使用的协议：
 {% highlight ruby %}
