@@ -91,11 +91,13 @@ PSC:\Users\Administrator> ([adsisearcher]"(&(objectCategory=user)(name=dc))").Fi
 此时dc的组ID为513
 ![14](/assets/DCShadow/14.png)
 可以参考下面的对应组ID，513为域用户，那想要将dc加入至域管理组，就需要将组ID更改为512
-	512   Domain Admins
-	513   Domain Users
-	514   Domain Guests
-	515   Domain Computers
-	516   Domain Controllers
+{% highlight ruby %}
+    512   Domain Admins
+    513   Domain Users
+    514   Domain Guests
+    515   Domain Computers
+    516   Domain Controllers
+{% endhighlight %}
 ## 执行更改
 在窗口A中执行
 {% highlight ruby %}
@@ -118,7 +120,9 @@ mimikatz # lsadump::dcshadow /object:CN=dc,CN=Users,DC=tony,DC=local /attribute:
 6.	总结
 DCShadow目前还是具有危害性的操作行为，该技术可以用于更改和删除复制以及其他关联的元数据，以阻止应急人员分析。攻击者还可以利用此技术执行SID历史记录注入和操纵AD对象（例如帐户，访问控制列表等）以建立持久性后门。
 这不属于漏洞，因为是使用合法的已记录使用的协议：
-	MS-ADTS
-	MS-DRSR
+{% highlight ruby %}
+    MS-ADTS
+    MS-DRSR
+{% endhighlight %}
 这是一种利用后攻击（也称为控制攻击），因为它需要域管理员（或企业管理员）特权。
 安全分析人员可以通过流量以及相关的安全日志来查找痕迹。
