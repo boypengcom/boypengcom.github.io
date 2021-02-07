@@ -4,7 +4,7 @@ title:  "从NTDS.DIT文件中提取密码哈希"
 date:   2019-12-31
 tags: ID不重要
 color: rgb(135,206,235)
-cover: '../assets/1608804184(1).png'
+cover: '../assets/passwd.png'
 subtitle: '卷影副本转储NTDS.DIT文件'
 ---
 
